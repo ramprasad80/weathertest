@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>{{title}}</title>
+	<link rel="icon" href="/img/weather.png">
+	<link rel= "stylesheet" href="/css/styles.css"/>
+	
+</head>
+<body>
+	<div class="main-content"> 
+		{{>header}}
+		<p>Get this site to check weather!!</p>
+
+		<form name="address" method="post">
+			<input type="text" name="search" id="search">
+			<input type="submit" name="add-button" id="add-button" value="Find">
+		</form>
+		<h2>Weather Report</h2>
+		<p id="search-result"></p>
+	</div>
+	{{>footer}}
+	<script src="/js/custom.js"></script>
+</body>
+
+</html>
