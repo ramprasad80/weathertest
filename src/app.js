@@ -9,6 +9,8 @@ const publicPath = path.join(__dirname,'../public');
 const viewPath = path.join(__dirname,'../templates/views');
 const partialsPath = path.join(__dirname, '../templates/partials');
 
+//get port
+const port = process.env.PORT || 3000;
 //Register partials with hbs
 hbs.registerPartials(partialsPath);
 
@@ -70,6 +72,6 @@ app.get('*', (req,res) => {
 })
 //lesten on a specific port
 
-app.listen(3000, () => {
+app.listen(port, () => {
 	console.log('The server is up and running on port 3000.');
 });
